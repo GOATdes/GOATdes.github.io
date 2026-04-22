@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { font-family: "Helvetica Neue", Arial, sans-serif; padding: 50px 20px; background-color: #f9f9f9; color: #333; margin: 0; }
-        
         .container { max-width: 600px; margin: 0 auto; }
 
         .intro-box { 
@@ -30,14 +29,19 @@
         }
         .instagram-link:hover { color: #e1306c; }
 
-        .manual-section { text-align: left; }
-        .section-title { 
-            font-size: 1.5rem; 
-            border-left: 5px solid #333; 
-            padding-left: 15px; 
-            margin-bottom: 20px; 
-            font-weight: bold;
+        /* 自己紹介文のスタイル */
+        .intro-text { line-height: 1.8; margin: 20px 0; }
+        .intro-images { margin-top: 30px; }
+        .intro-images img { 
+            display: block; 
+            margin: 0 auto 15px auto; 
+            max-width: 100%; 
+            height: auto; 
+            border: 1px solid #ddd;
         }
+
+        .manual-section { text-align: left; }
+        .section-title { font-size: 1.5rem; border-left: 5px solid #333; padding-left: 15px; margin-bottom: 20px; font-weight: bold; }
 
         .article-card {
             display: block;
@@ -62,18 +66,29 @@
             <a href="https://www.instagram.com/ssss_yagi" class="instagram-link" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <h1>自己紹介</h1>
-            <p>ここにあなたのプロフィールや活動の目的を書きます。シンプルながらも想いが伝わるスペースです。</p>
+            <h1>G.O.A.T</h1>
+            
+            <div class="intro-text">
+                <p>26歳無職。<br>
+                好きなもの：株、音ゲー、放浪。<br>
+                嫌いなもの：労働、声がデカい人、満員電車。</p>
+                
+                <p>人生のセーフティネット作りや株のやり方など<br>
+                持たざる者の生存戦略を書き残す。</p>
+            </div>
+
+            <div class="intro-images">
+                <img src="ongeki.png" alt="オンゲキ画像">
+                <img src="bandori.jpg" alt="バンドリ画像">
+            </div>
         </div>
 
         <div class="manual-section">
             <div class="section-title">🛡️ 人生防衛マニュアル</div>
-            
             <a href="manual/article1.html" class="article-card">
                 <span class="article-title">第1回：まずは揃えたい基本の装備品</span>
                 <span class="article-meta">2026.04.23 公開 | 防犯グッズ</span>
             </a>
-
             <div style="text-align: center; color: #999; padding: 20px;">
                 Coming Soon... 次の記事を執筆中です。
             </div>
