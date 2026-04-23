@@ -6,7 +6,6 @@
     <title>G.O.A.T</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* 外側のグレー背景と大きな枠線を復元 */
         body { 
             font-family: "Helvetica Neue", Arial, sans-serif; 
             background-color: #f4f4f4; 
@@ -17,23 +16,15 @@
             margin: 0; 
         }
 
-        /* 以前の状態：外側のコンテナ枠 */
-        .container {
-            background-color: #f9f9f9;
-            border: 1px solid #eee; /* 外側の線 */
-            padding: 20px;
-            border-radius: 15px;
-        }
-
-        /* 内側のプロフィールカード：これが以前の「線」があるカードです */
+        /* 【復元】以前の1px黒線デザイン */
         .profile-card { 
             background: white; 
             padding: 40px; 
             border-radius: 12px; 
-            border: 1px solid #ddd; /* カード自体の線 */
+            border: 1px solid #000; /* 👈 指示通りの黒線 */
             box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
             max-width: 500px; 
-            width: 100%; 
+            width: 90%; 
             text-align: center; 
         }
 
@@ -64,30 +55,28 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="profile-card">
-        <div class="sns-links">
-            <a href="https://jp.pinterest.com/ssss_yagi/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="https://open.spotify.com/user/..." target="_blank"><i class="fa-brands fa-spotify"></i></a>
-            <a href="https://www.instagram.com/ssss_yagi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="manual/article1.html"><i class="fa-solid fa-shield-halved"></i></a>
-        </div>
+<div class="profile-card">
+    <div class="sns-links">
+        <a href="https://jp.pinterest.com/ssss_yagi/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://open.spotify.com/user/ssss_yagi" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://www.instagram.com/ssss_yagi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="manual/article1.html"><i class="fa-solid fa-shield-halved"></i></a>
+    </div>
 
-        <h1>G.O.A.T</h1>
+    <h1>G.O.A.T</h1>
 
-        <div class="intro-text">
-            <p>26歳無職。<br>
-            好きなもの：株、音ゲー、写真、音楽、放浪。<br>
-            嫌いなもの：労働、声がデカい人、満員電車。</p>
-            
-            <p>人生のセーフティネット作りや株のやり方など<br>
-            持たざる者の生存戦略を書き残す。</p>
-        </div>
+    <div class="intro-text">
+        <p>26歳無職。<br>
+        好きなもの：株、音ゲー、写真、音楽、放浪。<br>
+        嫌いなもの：労働、声がデカい人、満員電車。</p>
+        
+        <p>人生のセーフティネット作りや株のやり方など<br>
+        持たざる者の生存戦略を書き残す。</p>
+    </div>
 
-        <div class="intro-images">
-            <img src="ongeki.png" alt="オンゲキ">
-            <img src="bandori.PNG" alt="バンドリ">
-        </div>
+    <div class="intro-images">
+        <img src="ongeki.png" alt="オンゲキ">
+        <img src="bandori.PNG" alt="バンドリ">
     </div>
 </div>
 
