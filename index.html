@@ -15,17 +15,18 @@
             min-height: 100vh; 
             margin: 0; 
         }
-        /* 自己紹介カード本体 */
+        /* カード本体：枠線を維持 */
         .profile-card { 
             background: white; 
             padding: 40px; 
             border-radius: 12px; 
+            border: 1px solid #ddd; 
             box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
             max-width: 500px; 
             width: 90%; 
             text-align: center; 
         }
-        /* アイコンが並ぶヘッダー部分 */
+        /* アイコン列：右上に配置 */
         .sns-links { 
             display: flex; 
             justify-content: flex-end; 
@@ -36,21 +37,18 @@
             color: #333; 
             font-size: 1.2rem; 
             text-decoration: none; 
-            transition: opacity 0.2s;
-        }
-        .sns-links a:hover {
-            opacity: 0.6;
         }
         
         h1 { font-size: 2rem; margin: 20px 0; letter-spacing: 2px; }
         .intro-text { line-height: 1.8; color: #555; margin-bottom: 30px; }
         
-        /* オンゲキとバンドリの画像 */
+        /* 画像表示設定 */
         .intro-images img { 
             width: 100%; 
             border-radius: 4px; 
             margin-top: 10px; 
             border: 1px solid #eee;
+            display: block;
         }
     </style>
 </head>
@@ -61,7 +59,7 @@
         <a href="https://jp.pinterest.com/ssss_yagi/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
         <a href="https://open.spotify.com/user/ssss_yagi" target="_blank"><i class="fa-brands fa-spotify"></i></a>
         <a href="https://www.instagram.com/ssss_yagi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="manual/article1.html" title="人生防衛マニュアル"><i class="fa-solid fa-shield-halved"></i></a>
+        <a href="manual/article1.html"><i class="fa-solid fa-shield-halved"></i></a>
     </div>
 
     <h1>G.O.A.T</h1>
@@ -76,8 +74,8 @@
     </div>
 
     <div class="intro-images">
-        <img src="ongeki.png" alt="オンゲキ画像">
-        <img src="bandori.PNG" alt="バンドリ画像">
+        <img src="ongeki.png" alt="オンゲキ">
+        <img src="bandori.PNG" alt="バンドリ">
     </div>
 </div>
 
