@@ -15,17 +15,18 @@
             min-height: 100vh; 
             margin: 0; 
         }
-        /* 前のコードのカードデザインを完全に復元 */
+        /* カード本体：以前の枠線(#ddd)を完全に復元 */
         .profile-card { 
             background: white; 
             padding: 40px; 
             border-radius: 12px; 
-            border: 1px solid #ddd; /* 以前の薄いグレーの枠線 */
+            border: 1px solid #ddd; 
             box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
             max-width: 500px; 
             width: 90%; 
             text-align: center; 
         }
+        /* アイコン列：右上に4つ並ぶ構成 */
         .sns-links { 
             display: flex; 
             justify-content: flex-end; 
@@ -41,8 +42,10 @@
         h1 { font-size: 2rem; margin: 20px 0; letter-spacing: 2px; }
         .intro-text { line-height: 1.8; color: #555; margin-bottom: 30px; }
         
+        /* 画像：縦に並ぶよう表示 */
         .intro-images img { 
             width: 100%; 
+            height: auto;
             border-radius: 4px; 
             margin-top: 10px; 
             border: 1px solid #eee;
