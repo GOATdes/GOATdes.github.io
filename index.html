@@ -16,7 +16,6 @@
             margin: 0; 
         }
 
-        /* 1pxの黒線デザイン */
         .profile-card { 
             background: white; 
             padding: 40px; 
@@ -28,18 +27,26 @@
             text-align: center; 
         }
 
-        /* アイコンの並び：Pinterest, Spotify, Instagram, GitHub, 盾 の順 */
         .sns-links { 
             display: flex; 
             justify-content: flex-end; 
             gap: 15px; 
             margin-bottom: 20px; 
         }
+
         .sns-links a { 
             color: #333; 
             font-size: 1.2rem; 
             text-decoration: none; 
+            transition: color 0.3s; /* 色の変化を滑らかにする */
         }
+
+        /* ホバー時の色設定を復活 */
+        .sns-links a .fa-pinterest:hover { color: #bd081c; }
+        .sns-links a .fa-spotify:hover { color: #1db954; }
+        .sns-links a .fa-instagram:hover { color: #e4405f; }
+        .sns-links a .fa-github:hover { color: #4078c0; }
+        .sns-links a .fa-shield-halved:hover { color: #666; }
         
         h1 { font-size: 2rem; margin: 20px 0; letter-spacing: 2px; }
         .intro-text { line-height: 1.8; color: #555; margin-bottom: 30px; }
@@ -71,7 +78,7 @@
         <p>26歳無職。<br>
         好きなもの：株、音ゲー、写真、音楽、放浪。<br>
         嫌いなもの：労働、声がデカい人、満員電車。</p>
-        </div>
+    </div>
 
     <div class="intro-images">
         <img src="ongeki.png" alt="オンゲキ">
