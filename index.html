@@ -2,114 +2,84 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ssss-yagiのページ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.O.A.T</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: "Helvetica Neue", Arial, sans-serif; padding: 50px 20px; background-color: #f9f9f9; color: #333; margin: 0; }
-        .container { max-width: 600px; margin: 0 auto; }
-
-        .intro-box { 
-            position: relative; 
-            border: 2px solid #333; 
-            padding: 40px 30px; 
-            margin-bottom: 40px; 
+        body { 
+            font-family: "Helvetica Neue", Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        /* 自己紹介カード本体 */
+        .profile-card { 
             background: white; 
-            box-sizing: border-box; 
-            text-align: center;
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+            max-width: 500px; 
+            width: 90%; 
+            text-align: center; 
         }
-
-        /* アイコンを右上に並べるエリア */
-        .sns-links {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
+        /* アイコンが並ぶヘッダー部分 */
+        .sns-links { 
+            display: flex; 
+            justify-content: flex-end; 
+            gap: 15px; 
+            margin-bottom: 20px; 
         }
-        .sns-links a {
-            color: #333;
-            font-size: 1.4rem;
-            text-decoration: none;
-            transition: 0.2s;
+        .sns-links a { 
+            color: #333; 
+            font-size: 1.2rem; 
+            text-decoration: none; 
+            transition: opacity 0.2s;
         }
-        /* 各SNSのブランドカラーをホバー時に設定 */
-        .sns-links .instagram-link:hover { color: #e1306c; }
-        .sns-links .spotify-link:hover { color: #1DB954; }
-        .sns-links .pinterest-link:hover { color: #bd081c; }
-
-        .intro-text { line-height: 1.8; margin: 20px 0; }
-        .intro-images { margin-top: 30px; }
+        .sns-links a:hover {
+            opacity: 0.6;
+        }
+        
+        h1 { font-size: 2rem; margin: 20px 0; letter-spacing: 2px; }
+        .intro-text { line-height: 1.8; color: #555; margin-bottom: 30px; }
+        
+        /* オンゲキとバンドリの画像 */
         .intro-images img { 
-            display: block; 
-            margin: 0 auto 15px auto; 
-            max-width: 100%; 
-            height: auto; 
-            border: 1px solid #ddd;
+            width: 100%; 
+            border-radius: 4px; 
+            margin-top: 10px; 
+            border: 1px solid #eee;
         }
-
-        .manual-section { text-align: left; }
-        .section-title { font-size: 1.5rem; border-left: 5px solid #333; padding-left: 15px; margin-bottom: 20px; font-weight: bold; }
-
-        .article-card {
-            display: block;
-            background: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 15px;
-            text-decoration: none;
-            color: inherit;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .article-card:hover { border-color: #333; transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .article-title { display: block; font-size: 1.2rem; font-weight: bold; margin-bottom: 5px; }
-        .article-meta { font-size: 0.85rem; color: #777; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="intro-box">
-            <div class="sns-links">
-                <a href="https://jp.pinterest.com/ssss_yagi/" class="pinterest-link" target="_blank">
-                    <i class="fa-brands fa-pinterest"></i>
-                </a>
-                <a href="https://open.spotify.com/user/31b6vhqwrkpwzaaopyhld2ometoe?si=d65b6f5c969e455d" class="spotify-link" target="_blank">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-                <a href="https://www.instagram.com/ssss_yagi" class="instagram-link" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
+<div class="profile-card">
+    <div class="sns-links">
+        <a href="https://jp.pinterest.com/ssss_yagi/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://open.spotify.com/user/ssss_yagi" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://www.instagram.com/ssss_yagi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="manual/article1.html" title="人生防衛マニュアル"><i class="fa-solid fa-shield-halved"></i></a>
+    </div>
 
-            <h1>G.O.A.T</h1>
-            
-            <div class="intro-text">
-                <p>26歳無職。<br>
-                好きなもの：株、音ゲー、写真、音楽、放浪。<br>
-                嫌いなもの：労働、声がデカい人、満員電車。</p>
-                
-                <p>人生のセーフティネット作りや株のやり方など<br>
-                持たざる者の生存戦略を書き残す。</p>
-            </div>
+    <h1>G.O.A.T</h1>
 
-            <div class="intro-images">
-                <img src="ongeki.png" alt="オンゲキ画像">
-                <img src="bandori.PNG" alt="バンドリ画像">
-            </div>
-        </div>
+    <div class="intro-text">
+        <p>26歳無職。<br>
+        好きなもの：株、音ゲー、写真、音楽、放浪。<br>
+        嫌いなもの：労働、声がデカい人、満員電車。</p>
+        
+        <p>人生のセーフティネット作りや株のやり方など<br>
+        持たざる者の生存戦略を書き残す。</p>
+    </div>
 
-        <div class="manual-section">
-    <div class="section-title">🛡️ 人生防衛マニュアル</div>
-    <a href="manual/article1.html" class="article-card">
-        <span class="article-title">第1回：弱者のセーフティネット</span>
-        <span class="article-meta">2026.04.24 公開 | 生存戦略</span>
-    </a>
-    <div style="text-align: center; color: #999; padding: 20px;">
-        Coming Soon... 次の記事を執筆中です。
+    <div class="intro-images">
+        <img src="ongeki.png" alt="オンゲキ画像">
+        <img src="bandori.PNG" alt="バンドリ画像">
     </div>
 </div>
-    </div>
 
 </body>
 </html>
