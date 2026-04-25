@@ -2,118 +2,128 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>第1回：弱者のセーフティネット - ssss-yagi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生存戦略メモ - G.O.A.T</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { 
             font-family: "Helvetica Neue", Arial, sans-serif; 
-            line-height: 1.8; 
-            color: #333; 
-            max-width: 700px; 
-            margin: 0 auto; 
-            padding: 50px 20px; 
-            background-color: #f9f9f9; 
-            white-space: pre-wrap; 
+            background-color: #f4f4f4; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px;
         }
-        .article-container { 
+
+        /* 1pxの黒線デザインを継承 */
+        .article-card { 
             background: white; 
             padding: 40px; 
-            border: 1px solid #ddd; 
-            border-radius: 8px; 
+            border-radius: 12px; 
+            border: 1px solid #000; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+            max-width: 600px; 
+            width: 100%; 
         }
-        h1 { 
-            font-size: 1.8rem; 
-            border-bottom: 3px solid #333; 
-            padding-bottom: 10px; 
-            margin-bottom: 30px; 
-            white-space: normal;
+
+        h2 { 
+            border-bottom: 2px solid #333; 
+            padding-bottom: 5px; 
+            margin-top: 30px;
+            font-size: 1.5rem;
         }
-        /* 指定のリスト部分のみ背景色を適用 */
-        .license-list {
-            background-color: #f0f0f0;
-            padding: 20px 30px;
-            border-radius: 8px;
-            margin: 20px 0;
-            white-space: normal;
-            list-style-type: none;
+
+        ul { 
+            list-style-type: none; 
+            padding-left: 0; 
         }
-        .license-list li {
-            margin-bottom: 8px;
+
+        li { 
+            margin-bottom: 15px; 
+            line-height: 1.6;
         }
-        .back-link { 
-            display: inline-block; 
-            margin-bottom: 20px; 
+
+        .rule-main { 
+            font-weight: bold; 
+            display: block;
+        }
+
+        .rule-reason { 
             color: #666; 
-            text-decoration: none; 
             font-size: 0.9rem; 
-            white-space: normal;
+            display: block;
+            margin-left: 10px;
         }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .star { color: #f1c40f; }
     </style>
 </head>
 <body>
-    <div class="article-container">
-        <a href="../index.html" class="back-link">← TOPへ戻る</a>
-        <h1>第1回 弱者のセーフティネット</h1>
 
-弱者とは整った顔も持たず、優秀な遺伝子も持たず、金になる特技もなく、体力もない者、男性の全てに当てはまる者を言う。
+<div class="article-card">
+    <a href="../index.html" class="back-link">← TOPに戻る</a>
+    
+    <h1>生存戦略メモ</h1>
 
-まずこれらに当てはまってない者はこのマニュアルを読んでも時間の無駄なのでブラウザバックしてほしい。
+    <h2>【個別株マイルール】</h2>
+    <ul>
+        <li>
+            <span class="rule-main">・PFの4割以下にすること。</span>
+            <span class="rule-reason">→ 平均乖離の防止。</span>
+        </li>
+        <li>
+            <span class="rule-main">・グロース、IPO株はブレイクアウト順張りでin。</span>
+            <span class="rule-reason">→ 損切り幅が浅くて済む。</span>
+        </li>
+        <li>
+            <span class="rule-main">・バリュー、配当系株は逆張りでin。</span>
+            <span class="rule-reason">→ 安く買ってなんぼ。</span>
+        </li>
+        <li>
+            <span class="rule-main">・ROE10%↑、3年間経常利益連続成長、自己資本率40%↑のみin。</span>
+            <span class="rule-reason">→ ファンダ理由の連れ安リスク低減。</span>
+        </li>
+        <li>
+            <span class="rule-main">・指数連動性が高い株のみ触ること。</span>
+            <span class="rule-reason">→ 買い失敗しても指数の連れ高で助かる可能性。</span>
+            <span class="rule-reason">→ 先が読みやすい。</span>
+        </li>
+    </ul>
 
-さて、今回はセーフティネットについてだ。
-弱者であるほど何があってもいいようにカードをストックするべきだ。
+    <h2>【指数積立マイルール】</h2>
+    <ul>
+        <li>
+            <span class="rule-main">期待度：<span class="star">★★★★★</span></span>
+            <span class="rule-main">VIX 25から5ずつ上がるごとに買い下がり。</span>
+        </li>
+        <li>
+            <span class="rule-main">期待度：<span class="star">★★★☆☆</span></span>
+            <span class="rule-main">日足、週足RSI 30↓ or Fear and GreedがEx Fear時はそのタイミングから5日ごとに条件が満たしている間買い下がり。</span>
+        </li>
+    </ul>
 
-結論から言うと以下を取るべきだ。
-<ul class="license-list">
-    <li>・大型免許</li>
-    <li>・大型2種免許</li>
-    <li>・けん引免許</li>
-    <li>・大型特殊免許</li>
-    <li>・フォークリフト</li>
-    <li>・玉掛け</li>
-    <li>・移動式クレーン運転士免許</li>
-    <li>・英検準1級 and PTE Academic60点以上</li>
-</ul>
+    <h2>【セーフティネット】</h2>
+    <ul>
+        <li>・大型2種、けん引、大特免許。</li>
+        <li>・フォークリフト、玉掛け技能講習。</li>
+        <li>・移動式クレーン運転士免許。</li>
+        <li>・英検準1級 and PTE Academic 60点↑。</li>
+    </ul>
+</div>
 
-免許系は基本全て取得をしておきたい。
-ほぼ誰でも取れるので再現性が高く、難易度の割にはトラック、バス等の給料面はそこそこなのでコスパは良い。
-
-フォークリフト、玉掛け、移動式クレーン運転士免許は更新の必要が無い一生涯のものという点と、難易度的にも人を選ばないという点からだ。
-
-間違っても簿記などを弱者が取ってはいけない。
-人余りの職業＝競争＝死である。
-そもそもこれら挙げたものより数百倍は簿記2級なんて難しいのに、働き口は皆無に等しく、未経験不可、仮に働けても300万の給料だ。
-競争力のない弱者にとっては貧乏くじである。
-
-簿記だけではなくよくSNS等で推奨されている資格もだめだ。
-結局その資格を用いてすぐに働けなければ意味がない。
-
-さて話を戻そう。
-最後に英検とPTEという英語試験が入ってる。
-
-英語は何かと役に立つ。
-国内外問わずだ。
-英語と日本語を喋れれば一定の需要はある。
-
-更に優秀でなくともなんとかなるのが英語だ。
-遺伝子でほぼ全ての能力が決まる中、語学は遺伝率50%前後だ。
-弱者遺伝子を持ってたとしても再現性がある。
-
-TOEICではなく英検を挙げたのは属性が同じだからであり、
-英検の方が4技能試験なので実力が付きやすい。
-
-TOEICは就労ビザや永住権獲得どころか東アジアでしかほとんど普及しておらず、英検と大差ないのだ。
-
-TOEICとPTEという組み合わせだと国内向けと国内向けだ。
-よって英検準1級(国内向け)とPTE(海外向け)にした。
-
-IELTSを本当は推奨したいがクソ長い試験を解く集中力は弱者にはない。
-
-PTEなら2時間で終わる。
-更に主にイギリス連邦圏(オーストラリア、ニュージーランド、カナダ、イギリスなど)で就労ビザや永住権の基準として出せるIELTSと同等の世界資格と言えるだろう。
-
-以上が最低限持っておきたい弱者の手札、セーフティネットである。
-
-        <br>
-        <a href="../index.html" class="back-link">← TOPへ戻る</a>
-    </div>
 </body>
 </html>
