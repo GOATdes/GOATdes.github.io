@@ -1,1 +1,1 @@
-https://GOATdes.github.io/
+https://ssss-yagi.github.io/
